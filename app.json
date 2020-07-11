@@ -1,0 +1,12 @@
+{
+  "name": "suppliercatalog",
+  "displayName": "suppliercatalog",
+  "expo": {
+    "name": "suppliercatalog",
+    "slug": "suppliercatalog",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
