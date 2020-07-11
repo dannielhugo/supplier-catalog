@@ -1,12 +1,12 @@
 {
   "suppliers": [
     {
-      "id": 1,
-      "fantasy": "DASDASD",
-      "cnpj": "ASDASDAS",
-      "companyName": "ASDASdAS",
-      "address": "ASDASDAS",
-      "city": "ASDASD"
+      "fantasy": "ACME Corporation",
+      "cnpj": "09912301990001",
+      "companyName": "ACME INC",
+      "address": "Road Runner/Wile E. Coyote",
+      "city": "Warner Bros City",
+      "id": 1
     }
   ]
 }
