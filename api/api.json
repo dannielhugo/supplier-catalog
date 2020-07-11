@@ -1,0 +1,12 @@
+{
+  "suppliers": [
+    {
+      "id": 1,
+      "fantasy": "DASDASD",
+      "cnpj": "ASDASDAS",
+      "companyName": "ASDASdAS",
+      "address": "ASDASDAS",
+      "city": "ASDASD"
+    }
+  ]
+}
