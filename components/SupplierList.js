@@ -30,6 +30,9 @@ export default function SupplierList({ route, navigation }) {
             id={item.id}
             fantasy={item.fantasy}
             cnpj={item.cnpj}
+            companyName={item.companyName}
+            address={item.address}
+            city={item.city}
             navigation={navigation}
             route={route}
           />

@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { deleteSupplier } from '../services/api';
 
-export default function Item({ id, fantasy, cnpj, navigation }) {
+export default function Item({ id, fantasy, cnpj, companyName, address, city, navigation }) {
   return (
     <View style={styles.item}>
       <Text style={styles.title}>{fantasy}</Text>
@@ -17,9 +17,12 @@ export default function Item({ id, fantasy, cnpj, navigation }) {
         onPress={() => {
           /* 1. Navigate to the Details route with params */
           navigation.navigate('Edit', {
-            id: id,
-            fantasy: fantasy,
-            cnpj: cnpj,
+            id,
+            fantasy,
+            cnpj,
+            companyName,
+            address,
+            city,
           });
         }}
       />

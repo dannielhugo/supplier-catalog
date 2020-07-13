@@ -4,11 +4,11 @@ import { StyleSheet, KeyboardAvoidingView, Platform, View, Text } from 'react-na
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
 
 export default function SupplierEditForm({ route, navigation }) {
-  const [fantasy, setFantasy] = React.useState('');
-  const [cnpj, setCnpj] = React.useState('');
-  const [companyName, setCompanyName] = React.useState('');
-  const [address, setAddress] = React.useState('');
-  const [city, setCity] = React.useState('');
+  const [fantasy, setFantasy] = React.useState(route.params.fantasy);
+  const [cnpj, setCnpj] = React.useState(route.params.cnpj);
+  const [companyName, setCompanyName] = React.useState(route.params.companyName);
+  const [address, setAddress] = React.useState(route.params.address);
+  const [city, setCity] = React.useState(route.params.city);
   const [id,] = React.useState(route.params.id);
 
   async function handleSubmit(event) {
@@ -17,6 +17,8 @@ export default function SupplierEditForm({ route, navigation }) {
     const data = { id, fantasy, cnpj, companyName, address, city };
 
     await editSupplier(id, data);
+
+    navigation.navigate('Main');
   }
 
   return (
